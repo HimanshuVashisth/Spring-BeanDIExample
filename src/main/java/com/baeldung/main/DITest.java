@@ -11,6 +11,8 @@ public class DITest {
 		// TODO Auto-generated method stub
 
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beanConfig.xml");
+
+		
 		
 		Person person = (Person) applicationContext.getBean("person");
 		person.fetchPersonAddress();
