@@ -12,6 +12,8 @@ public class DITest {
 
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beanConfig.xml");
 		
+		
+		
 		Person person = (Person) applicationContext.getBean("person");
 		person.fetchPersonAddress();
 	}
